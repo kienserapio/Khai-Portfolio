@@ -100,7 +100,17 @@ portfolioItems.forEach(item => {
             modalDescription.textContent = 'This photography project features professional lighting techniques, composition mastery, and post-processing expertise. The work demonstrates attention to detail and artistic vision in capturing compelling visual narratives.';
         }
         
-        modalLink.href = '#';
+        // set link from data attribute (falls back to '#')
+        const itemLink = item.dataset.link || '#';
+        const itemLinkTarget = item.dataset.linkTarget || '_self';
+        modalLink.href = itemLink;
+        modalLink.target = itemLinkTarget;
+        if (itemLinkTarget === '_blank') {
+            modalLink.rel = 'noopener noreferrer';
+        } else {
+            modalLink.removeAttribute('rel');
+        }
+
         portfolioModal.classList.add('open');
     });
 });
