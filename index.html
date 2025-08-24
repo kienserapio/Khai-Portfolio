@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khai Serapio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">CREATIVE<span style="color: var(--accent-color);">.</span></a>
+            
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <video class="hero-video" autoplay muted loop>
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-digital-waves-9882-large.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        
+        <div class="container hero-content">
+            <h1 class="hero-title">KHAI SERAPIO</h1>
+            <p class="hero-subtitle">Multimedia Artist</p>
+            <div class="hero-cta">
+                <a href="#portfolio" class="btn">View Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://placehold.co/600x800" alt="Professional portrait of creative director Alex Johnson in a modern studio setting with clean lighting and minimalist background">
+                </div>
+                
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>I'm a passionate creative professional with over 8 years of experience in multimedia design, video production, and digital storytelling. My work blends technical expertise with artistic vision to create compelling visual experiences.</p>
+                    
+                    <p>I specialize in transforming complex ideas into engaging visual narratives that resonate with audiences across multiple platforms. My approach combines strategic thinking with creative execution to deliver impactful results.</p>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Design</h4>
+                            <ul class="skill-list">
+                                <li>Adobe Photoshop</li>
+                                <li>Adobe Lightroom</li>
+                                <li>Canva</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Video</h4>
+                            <ul class="skill-list">
+                                <li>Davinci Resolve</li>
+                                <li>Adobe Premiere Pro</li>
+                                <li>CapCut Pro</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn btn-outline" style="margin-top: 2rem;">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="portfolio-header">
+                <h2>Featured Work</h2>
+                <p>A selection of my recent projects across different media formats</p>
+            </div>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+                <button class="filter-btn" data-filter="video">Video Editing</button>
+                <button class="filter-btn" data-filter="photo">Photography</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Graphic Design Projects -->
+                <div class="portfolio-item" data-category="graphic">
+                    <img src="https://placehold.co/600x400" alt="Modern brand identity design for tech startup featuring clean typography and geometric shapes" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">NexTech Brand Identity</h3>
+                        <p class="portfolio-category">Graphic Design</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="graphic">
+                    <img src="https://placehold.co/600x400" alt="Minimalist poster design with bold typography and abstract geometric elements in monochrome palette" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Urban Arts Festival</h3>
+                        <p class="portfolio-category">Graphic Design</p>
+                    </div>
+                </div>
+                
+                <!-- Video Projects -->
+                <div class="portfolio-item" data-category="video">
+                    <img src="https://placehold.co/600x400" alt="Film production still showing cinematic lighting and professional camera setup for commercial shoot" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">EcoTech Commercial</h3>
+                        <p class="portfolio-category">Video Production</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="video">
+                    <img src="https://placehold.co/600x400" alt="Behind-the-scenes video editing workspace with multiple monitors and professional editing software interface" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">27C Insurance Agency</h3>
+                        <p class="portfolio-category">Motion Graphics</p>
+                    </div>
+                </div>
+                
+                <!-- Photography Projects -->
+                <div class="portfolio-item" data-category="photo">
+                    <img src="https://placehold.co/600x400" alt="Professional portrait photography session with dramatic lighting and emotional expression" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Executive Portraits</h3>
+                        <p class="portfolio-category">Photography</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="photo">
+                    <img src="https://placehold.co/600x400" alt="Product photography setup showcasing luxury watch with precise lighting and reflective surfaces" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Luxury Product Shoot</h3>
+                        <p class="portfolio-category">Photography</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Contact Me</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Let's craft perfection together!</h3>
+                    <p>I'm always interested in new projects and collaborations. Feel free to reach out if you'd like to work together.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>khaiserapio@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(+63) 927 1768 321</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Quezon City, Philippines</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-vimeo-v"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="form-textarea" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#" class="logo">CREATIVE<span style="color: var(--accent-color);">.</span></a>
+            
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <p class="copyright">© 2024 Creative Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modal -->
+    <div class="modal" id="portfolioModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <img src="https://placehold.co/800x500" alt="Detailed project showcase with multiple design elements and creative process documentation" class="modal-image" id="modalImage">
+            
+            <video class="modal-video" id="modalVideo" controls style="display: none;">
+                <source src="" type="video/mp4">
+            </video>
+            
+            <h2 id="modalTitle">Project Title</h2>
+            <p id="modalCategory" style="color: var(--accent-color); margin-bottom: 1rem;">Category</p>
+            <p id="modalDescription">Project description will appear here with detailed information about the creative process, tools used, and final outcomes.</p>
+            
+            <div style="margin-top: 2rem;">
+                <a href="#" class="btn" id="modalLink">View Project</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
