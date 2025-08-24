@@ -133,22 +133,38 @@ portfolioModal.addEventListener('click', (e) => {
     }
 });
 
-// Form Validation
+// EmailJS send via form submit (replace existing sendEmail and contactForm submit handler)
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
-    
-    if (name && email && subject && message) {
-        // Simulate form submission
-        alert('Thank you for your message! I\'ll get back to you soon.');
-        contactForm.reset();
-    } else {
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !subject || !message) {
         alert('Please fill in all fields.');
+        return;
     }
+
+    // Map keys to the variable names used in your EmailJS template.
+    // Update the keys below to match the template placeholders (e.g. from_name, from_email, message, etc.)
+    const params = {
+        from_name: name,
+        from_email: email,
+        subject: subject,
+        message: message
+    };
+
+    emailjs.send('service_5rajl59', 'template_9b3baz8', params)
+        .then(() => {
+            alert("Thank you for your message! I'll get back to you soon.");
+            contactForm.reset();
+        })
+        .catch((err) => {
+            console.error('EmailJS error:', err);
+            alert('There was an error sending your message. Please try again later.');
+        });
 });
 
 // Sticky Navigation

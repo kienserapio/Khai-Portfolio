@@ -6,6 +6,16 @@
     <title>Khai Serapio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "i9srkXcTzs3QC989K",
+        });
+    })();
+</script>
 </head>
 <body>
     <!-- Navigation -->
@@ -80,7 +90,7 @@
                         </div>
                     </div>
                     
-                    <a href="#" class="btn btn-outline" style="margin-top: 2rem;">
+                    <a href="assets/KHAI SERAPIO RESUME.pdf" class="btn btn-outline" style="margin-top: 2rem;" download="KHAI_SERAPIO_RESUME.pdf">
                         <i class="fas fa-download"></i> Download Resume
                     </a>
                 </div>
@@ -123,7 +133,7 @@
                 
                 <!-- Video Projects -->
                 <div class="portfolio-item" data-category="video" data-link="https://www.youtube.com/watch?v=bmEgQq8VoR8&ab_channel=27CRealty" data-link-target="_blank">
-                    <img src="assets/Untitled design.gif" alt="Film production still showing cinematic lighting and professional camera setup for commercial shoot" class="portfolio-image">
+                    <img src="assets/video2.gif" alt="Film production still showing cinematic lighting and professional camera setup for commercial shoot" class="portfolio-image">
                     <div class="portfolio-overlay">
                         <h3 class="portfolio-title">27C Realty Estate Video</h3>
                         <p class="portfolio-category">Video Production</p>
@@ -208,24 +218,24 @@
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
                         <label for="name" class="form-label">Name</label>
-                        <input type="text" id="name" class="form-input" required>
+                        <input type="text" id="name" name="from_name" class="form-input" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" id="email" class="form-input" required>
+                        <input type="email" id="email" name="from_email" class="form-input" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="subject" class="form-label">Subject</label>
-                        <input type="text" id="subject" class="form-input" required>
+                        <input type="text" id="subject" name="subject" class="form-input" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="message" class="form-label">Message</label>
-                        <textarea id="message" class="form-textarea" required></textarea>
+                        <textarea id="message" name="message" class="form-textarea" required></textarea>
                     </div>
-                    
+
                     <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
@@ -237,7 +247,7 @@
         <div class="container footer-content">
             <a href="#" class="logo">KHAI<span style="color: var(--accent-color);">.</span></a>
         
-            <p class="copyright">© 2025 Khai Serapio Portfolio. All rights reserved.</p>
+            <!-- <p class="copyright">© 2025 Khai Serapio Portfolio. All rights reserved.</p> -->
         </div>
     </footer>
 
