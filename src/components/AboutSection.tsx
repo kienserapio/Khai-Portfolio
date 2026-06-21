@@ -4,7 +4,7 @@ import AnimatedText from './AnimatedText';
 import ContactButton from './ContactButton';
 
 const AboutSection: React.FC = () => {
-  const aboutText = "With more than five years of experience in design, I focus on branding, web design, and user experience, I truly enjoy working with businesses that aim to stand out and present their best image. Let's build something incredible together!";
+  const aboutText = "Award-winning multimedia professional with 3+ years of expertise spanning advanced NLE video editing, high-fidelity graphic design, and commercial videography/photography. Proven track record in engineering high-retention short-form content and broadcast-ready long-form narratives that elevate brand authority.";
 
   return (
     <section id="about" className="min-h-screen flex flex-col items-center justify-center px-5 sm:px-8 md:px-10 py-20 relative">
