@@ -21,7 +21,7 @@ const projects = [
     number: '02',
     category: 'Motion Video',
     name: '27C Insurance Agency',
-    link: 'https://www.youtube.com/shorts/38RF5UIEJaE',
+    link: '/videos',
     images: {
       col1: [
         '/assets/project2.2.png',
@@ -34,7 +34,7 @@ const projects = [
     number: '03',
     category: 'Personal Shoot',
     name: 'Stylistic Cinematography',
-    link: '',
+    link: '/cinematography',
     images: {
       col1: [
         '/assets/project3.2.png',
